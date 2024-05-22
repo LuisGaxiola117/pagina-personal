@@ -1,0 +1,145 @@
+body{
+  background: #228b22;
+}
+
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #b5b35c;
+  z-index: 1;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+.header {
+  padding: 35px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: system-ui;
+}
+
+.login-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+  background: rgba(16, 26, 17, 0.8); 
+  padding: 10px;
+  border-radius: 10%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  width: 30%; 
+  margin: auto; 
+}
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  z-index: 2;
+}
+.form-group {
+  width: 100%; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin-bottom: 15px;
+  z-index: 2;
+}
+.form-group input {
+  flex: 1; 
+  padding: 5px;
+  margin: 0 5px; 
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  z-index: 2;
+}
+.form-group input {
+  width: 80%; 
+  padding: 5px; 
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  z-index: 2;
+}
+.form-group input[type="submit"] {
+  flex: 0 0 auto; 
+  padding: 5px 10px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+.form-group input[type="submit"]:hover {
+  background: #4CAF50;
+  z-index: 2;
+}
