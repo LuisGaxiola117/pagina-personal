@@ -1,6 +1,9 @@
 body{
   background: #228b22;
 }
+html, body {
+  overflow-y: hidden; 
+}
 
 
 .circle{
@@ -9,7 +12,7 @@ body{
   background: white;
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px #b5b35c;
-  z-index: 1;
+  z-index: -1;
 }
 
 .small{
@@ -86,7 +89,7 @@ body{
   color: rgb(255, 255, 255);
   font-size: 45px;
   font-weight: bolder;
-  font-family: system-ui;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .login-container {
